@@ -24,6 +24,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-tailwindcss": "^4.2.0",
     "eslint-plugin-unused-imports": "^4.4.1",
+    "prettier": "^3.9.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
