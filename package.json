@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "16.2.11",
@@ -24,6 +25,8 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-tailwindcss": "^4.2.0",
     "eslint-plugin-unused-imports": "^4.4.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.2.0",
     "prettier": "^3.9.6",
     "tailwindcss": "^4",
     "typescript": "^5"
