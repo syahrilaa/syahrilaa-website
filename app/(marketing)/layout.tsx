@@ -1,8 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const MarketingLayout: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+const MarketingLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return <div>{children}</div>;
 };
 
