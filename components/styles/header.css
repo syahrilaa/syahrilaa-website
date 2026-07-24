@@ -1,0 +1,35 @@
+:root {
+  --dock-spacing-top: calc(var(--spacing) * 4);
+  --dock-container-height: calc(var(--spacing) * 10);
+  --dock-container-background: var(--surface-container-low);
+
+  --header-height: calc(var(--dock-spacing-top) + var(--dock-container-height));
+}
+
+.header-wrapper {
+  --header-wrapper-height: var(--header-height);
+
+  z-index: 50;
+  height: var(--header-wrapper-height);
+}
+
+.header-wrapper-inline {
+  --header-spacing-x: calc(var(--spacing) * 4);
+  padding-inline: var(--header-spacing-x);
+}
+
+.header-dock-wrapper {
+  @apply size-max rounded-3xl backdrop-blur-xl min-h-10 min-w-10;
+
+  --dock-ring-color: color-mix(in srgb, var(--dock-container-background) 88%, transparent);
+  --dock-background: color-mix(in srgb, var(--dock-container-background) 58%, transparent);
+  --dock-foreground: var(--on-surface-container);
+  --dock-spacing-x: calc(var(--spacing) * 1);
+
+  padding-inline: var(--dock-spacing-x);
+  background-color: var(--dock-background);
+  color: var(--dock-foreground);
+
+  @apply ring-1;
+  --tw-ring-color: var(--dock-ring-color);
+}

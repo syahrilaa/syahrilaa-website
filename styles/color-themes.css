@@ -1,0 +1,17 @@
+@layer base {
+  :root {
+    --surface: var(--color-zinc-200);
+    --on-surface: var(--color-neutral-900);
+    --surface-container: var(--color-zinc-50);
+    --surface-container-low: var(--color-zinc-100);
+    --on-surface-container: var(--color-neutral-800);
+  }
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-on-surface: var(--on-surface);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-on-surface-container: var(--on-surface-container);
+}

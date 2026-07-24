@@ -1,1 +1,10 @@
+@layer theme, base, components, utilities;
 @import 'tailwindcss';
+
+@theme inline {
+  --font-lexend: var(--google-font-lexend);
+}
+
+@import '../styles/color-themes.css' layer(theme);
+
+@import '../components/components.css' layer(components);
