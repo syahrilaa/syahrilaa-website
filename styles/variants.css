@@ -1,0 +1,9 @@
+@custom-variant icon-only {
+  &:where(
+    :has(> :is(svg, [data-slot='content-icon'], [data-slot='btn-spinner'])):not(
+      :has(> :is(span, p, div, [data-slot='content-item']):not(:is(.sr-only, .visually-hidden, [hidden])))
+    )
+  ) {
+    @slot;
+  }
+}

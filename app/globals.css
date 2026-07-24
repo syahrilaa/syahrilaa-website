@@ -8,3 +8,5 @@
 @import '../styles/color-themes.css' layer(theme);
 
 @import '../components/components.css' layer(components);
+
+@import '../styles/variants.css';

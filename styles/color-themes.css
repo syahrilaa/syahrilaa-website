@@ -5,6 +5,9 @@
     --surface-container: var(--color-zinc-50);
     --surface-container-low: var(--color-zinc-100);
     --on-surface-container: var(--color-neutral-800);
+
+    --primary: var(--color-blue-800);
+    --on-primary: var(--color-zinc-50);
   }
 }
 
@@ -14,4 +17,7 @@
   --color-surface-container: var(--surface-container);
   --color-surface-container-low: var(--surface-container-low);
   --color-on-surface-container: var(--on-surface-container);
+
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
 }
