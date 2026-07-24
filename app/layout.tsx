@@ -1,4 +1,6 @@
 import React from 'react';
+import { cn } from 'tailwind-variants';
+import { lexend } from '~/lib/fonts';
 import './globals.css';
 import type { Metadata } from 'next';
 
@@ -9,8 +11,8 @@ export const metadata: Metadata = {
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-full flex-col">{children}</body>
+    <html lang="en" className="h-full bg-surface text-on-surface antialiased">
+      <body className={cn('font-lexend flex min-h-full flex-col', lexend.variable)}>{children}</body>
     </html>
   );
 };
